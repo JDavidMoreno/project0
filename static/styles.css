@@ -1,19 +1,49 @@
-h1, h2, h3, h4, h5, h6, p, img{
+h1, h2, h3, h4, h5, h6, img {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
-td img{
+p, small {
+  text-align: center;
+}
+
+td img {
   width:80%;
 }
 
 
-
-td, th{
+td, th {
   max-width: 20%;
 }
 
-.wide{
+.wide {
   width: 100%;
+}
+
+#big-title {
+  margin-top: 7rem;
+  color: #7dbef5;
+}
+
+#main-table img {
+  margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  #big-title {
+    font-size: 3rem;
+  }
+  #main-table tr > *:nth-child(3) {
+    display: none;
+  }
+}
+
+
+#azulejos {
+  margin: 0;
+}
+
+div.guides {
+  background-color: lightgray;
 }
